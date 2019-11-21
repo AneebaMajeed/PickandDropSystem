@@ -1,0 +1,141 @@
+
+<html>
+<head>
+<title>Sign Up</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link href="//cdn.muicss.com/mui-0.10.0/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.0/js/mui.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    #btnn
+  {
+    width:120px;
+    margin-left:150px;
+    margin-top:4px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+  }
+.wrapper{
+    height:100vh;
+    width:100%;
+    justify-content:center;
+    background-color: darkcyan;
+    /*background-image:url("./images/pic8.jpg");*/
+    background-repeat:no-repeat;
+    background-size:100%;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+  
+  }
+  .form-wrapper{
+    width:500px;
+    height:600px;
+    display:flex;
+    flex-direction:column;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px #555;
+    background-color: aliceblue;
+    border:4px blue solid;
+  
+  }
+  Button a:hover {
+  
+  color:white;
+}
+  form{
+    
+    width:100%;
+  }
+  input::placeholder{
+    font-family: "Times New Roman", Times, serif;
+  }
+  h1{
+  
+    text-align: center;
+    width:100%;
+    color:blue;
+    font-family: "Times New Roman", Times, serif;
+    
+  }
+  
+  label{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-weight:lighter;
+    margin-top:0px;
+    margin-bottom: 2px;
+    color: #222;
+  }
+  #head{
+    font-family: "Times New Roman", Times, serif;
+  }
+  input{
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px 230px 10px 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline:none;
+     
+  }
+ 
+  p{
+    font-family: "Times New Roman", Times, serif;
+    margin-left:90px;
+  }
+</style>
+
+
+
+    <body>
+    <div class="wrapper">
+       <div class="form-wrapper">
+         <h1>Create Account</h1>
+       <form >
+          <div>
+          <label htmlFor="username">UserName:</label>
+          <input type="text" placeholder="UserName" id="username" name="username" />
+          </div>
+
+          <div>
+            <label htmlFor="username">Phone No:</label>
+            <input type="text" placeholder="Phone No" id="phone" name="phone" />
+          </div>
+
+          <div >
+          <label htmlFor="email">Email:</label>
+          <input type="text" placeholder="Email" id="email"  name="email" />
+          </div>
+         
+          <div >
+          <label htmlFor="password">Password:</label>
+          <input type="password" placeholder="Password"  id="password"name="password"  /> 
+          </div>
+
+          <div >
+          <label htmlFor="confirm pass">Confirm Password:</label>
+          <input type="password" placeholder="Password" id="CPass" name="confirm_password" />
+          </div> 
+         
+          <div>
+          <button class="btn btn-outline-primary"  id="btnn" name="txtbutton" ><a href="login.html">Submit</a></button>
+            
+          </div>
+           
+          <p id="p">Already have an account? <a href="login.html">Login here</a>.</p>
+        
+         </form>  
+       </div> 
+    </div>
+</body>
+</html>
+
+
+
