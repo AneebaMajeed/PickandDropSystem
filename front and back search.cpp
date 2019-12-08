@@ -10,18 +10,27 @@ bool search(string arr[4][3], int n, string x[1][3])
 
 	// Keep searching while two indexes 
 	// do not cross. 
-	int r=4;
-	
-	while (front <= back) 
+		while (front <= back) 
 	{ 
 	
-	for (int i=0;i<4;i++){
-		r=r-1;
+	
+		
 		int l = 0;
+	    	int loop;
 		for (int j=0;j<3;j++)
 		{
-				if (arr[i][j] == x[0][j] || arr[r][j] == x[0][j]) 
-		            l++; 
+			
+		
+				if (arr[front][j] == x[0][j] || arr[back][j] == x[0][j]) {
+				    if(arr[front][j] == x[0][j])
+				    {
+				    	 loop=front;
+					}
+					if(arr[back][j] == x[0][j])
+				    {
+				    	loop=back;
+					}
+		            l++; }
 	
 		}
 		if(l == 3)
@@ -29,11 +38,13 @@ bool search(string arr[4][3], int n, string x[1][3])
 			
 			return true;
 		}
-		front++; 
+	
+	
+	 	front++; 
 		back--;	
-	}
-	 
 	} 
+	
+	
 	
 	
 	return false; 
